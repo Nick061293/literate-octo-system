@@ -1,13 +1,30 @@
 <!DOCTYPE html>
 
 <head>
-  <title>Bootstrap 4 Example</title>
+  <title>TC-PW</title>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  <script src="js/jquery.js"></script>
+  <script>
+    jQuery(document).ready(function ($) {
+
+      $('.button').on({
+        'click': function () {
+          $('#change-image').attr('src', 'img/luz_ligada.png');
+        }
+      });
+
+      $('#botão apagar').on({
+        'click': function () {
+          $('#change-image').attr('src', 'img/luz_desligada.png');
+        }
+      });
+    });
+
+  </script>
 </head>
 
 <body>
@@ -23,8 +40,8 @@
       <div class="container-fluid p-5">
         <img src="img/luz_desligada.gif" class="img-thumbnail" alt="luz desligada">
         <div>
-          <button type="button" class="btn btn-dark p-2 alert-dark">Acender</button>
-          <button type="button" class="btn btn-dark p-2 alert-dark">Apagar</button>
+          <button id="botão_acender" type="button" class="btn btn-dark p-2 alert-dark">Acender</button>
+          <button id="botão apagar" type="button" class="btn btn-dark p-2 alert-dark">Apagar</button>
         </div>
       </div>
     </div>
