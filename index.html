@@ -8,23 +8,8 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
   <script src="js/jquery.js"></script>
-  <script>
-    jQuery(document).ready(function ($) {
+  <script src="js/script.js"></script>
 
-      $('.button').on({
-        'click': function () {
-          $('#change-image').attr('src', 'img/luz_ligada.png');
-        }
-      });
-
-      $('#botão apagar').on({
-        'click': function () {
-          $('#change-image').attr('src', 'img/luz_desligada.png');
-        }
-      });
-    });
-
-  </script>
 </head>
 
 <body>
@@ -34,22 +19,24 @@
   </div>
 
   <div style="text-align: center;" class="row">
-    <div class="col">
 
-      <h2>Exemplo 1</h2>
-      <div class="container-fluid p-5">
-        <img src="img/luz_desligada.gif" class="img-thumbnail" alt="luz desligada">
-        <div>
-          <button id="botão_acender" type="button" class="btn btn-dark p-2 alert-dark">Acender</button>
-          <button id="botão apagar" type="button" class="btn btn-dark p-2 alert-dark">Apagar</button>
+    <div class="col">
+      <h2 class="p-5">Exemplo 1</h2>
+      <div class="">
+        <img id="mudar-imagem" src="img/luz_desligada.png" class="img-fluid" alt="luz desligada">
+        <div class="p-3">
+          <button id="botão-ligar" type="button" class="btn btn-dark p-2 alert-dark">Acender</button>
+          <button id="botão-desligar" type="button" class="btn btn-dark p-2 alert-dark">Apagar</button>
         </div>
       </div>
     </div>
+    
     <div style="text-align: center;" class="col">
-      <h2>Exemplo 2</h2>
+      <h2 class="p-5">Exemplo 2</h2>
     </div>
+    
     <div style="text-align: center;" class="col">
-      <h2>Exemplo 3</h2>
+      <h2 class="p-5">Exemplo 3</h2>
     </div>
   </div>
 
