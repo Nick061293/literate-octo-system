@@ -1,15 +1,112 @@
 <!DOCTYPE html>
-<html>
+<html lang="pt-br">
+
 <head>
-    <meta charset='utf-8'>
-    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
-    <title>ONE-PAGE</title>
-    <meta name='viewport' content='width=device-width, initial-scale=1'>
-    <link rel='stylesheet' type='text/css' media='screen' href='css/bootstrap.css'>
-    <script src="js/jquery.js"></script>
-    <script src="js/bootstrap.js"></script>r
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>DF-PW</title>
+  <!-- #region LINKS-->
+  <link rel="stylesheet" href="css/bootstrap.css">
+  <link rel="stylesheet" href="css/style.css">
+  <!-- #region -->
+
+  <!-- #region SCRIPTS-->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"
+    integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <script src="js/bootstrap.js"></script>
+  <script src="js/menu.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+    integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <!-- #endregion -->
 </head>
+
 <body>
-    
+  <!-- #region MENU-->
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-12">
+        <button id="btn-menu" class="btn btn-dark btn-lg mt-2"><i class="fas fa-bars"></i></button>
+      </div>
+    </div>
+    <!-- #endregion -->
+
+    <!-- #region BOTÕES-->
+    <div id="menu" class="row">
+      <div class="col-12 ml-3">
+        <a href="home"><i class="fas fa-home"></i>Home</a>
+      </div>
+      <div class="col-12 ml-3">
+        <a href="about"><i class="fas fa-question-circle"></i>O que é?</a>
+      </div>
+      <div class="col-12 ml-3">
+        <a href="action"><i class="fas fa-paper-plane"></i>Ações</a>
+      </div>
+      <div class="col-12 ml-3">
+        <a href="contact"><i class="fas fa-phone"></i>Contato</a>
+      </div>
+    </div>
+    <!-- #endregion -->
+
+    <!-- #region SUBMENUS -->
+    <div class="row" id="home">
+      <h1>Home
+        <i class="fa fa-home" aria-hidden="true"></i>
+      </h1>
+    </div>
+
+    <div class="row" id="about">
+      <h1>Sobre
+        <i class="fa fa-question-circle" aria-hidden="true"></i>
+      </h1>
+    </div>
+
+    <div class="row" id="action">
+      <h1>Ação
+        <i class="fa fa-paper-plane" aria-hidden="true"></i>
+      </h1>
+    </div>
+    <!-- #endregion -->
+
+    <!-- #region FORMULARIOS-->
+    <div class="row justify-content-center" id="contact">
+      <div class="col-12 col-sm-8 col-md-6">
+        <div class="alert alert-dark">
+          <h3 class="text-center">Fale conosco</h3>
+        </div>
+
+        <form>
+          <div class="form-group">
+            <label>Nome completo</label>
+            <input type="text" name="" id="" class="form-control">
+          </div>
+
+          <div class="form-group">
+            <label>E-mail</label>
+            <input type="text" name="" id="" class="form-control">
+          </div>
+
+          <div class="form-group">
+            <label>Assunto</label>
+            <input type="text" name="" id="" class="form-control">
+          </div>
+
+          <div class="form-group">
+            <label>Mensagem</label>
+            <textarea type="text" name="" id="" cols="30" rows="10" class="form-control"></textarea>
+          </div>
+
+          <div class="form-group row justify-content-end">
+            <div class="col-12 col-sm-6 col-md-3">
+              <button class="btn btn-dark"><i class="fas fa-paper-plane"></i>Enviar</button>
+            </div>
+          </div>
+        </form>
+      </div>
+    </div>
+    <!-- #endregion -->
 </body>
+
 </html>
