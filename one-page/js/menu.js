@@ -1,34 +1,15 @@
-$(document).ready(function () {
-  $("#btn-menu").click(function (e) {
-    e.preventDefault();
-    $("#menu").toggle("slow");
-  });
+$(document).ready(function(){
 
-  $("a").click(function (e) {
-    e.preventDefault();
+    $('#btn-menu').click(function(e){
+        e.preventDefault()
+        $('#menu').toggle('slow')
+    })
 
-    var href = $(this).attr("href");
-
-    if (href == "home") {
-      $("#" + href).show();
-      $("#about").hide();
-      $("#action").hide();
-      $("#contact").hide();
-    } else if (href == "about") {
-      $("#" + href).show();
-      $("#home").hide();
-      $("#action").hide();
-      $("#contact").hide();
-    } else if (href == "action") {
-      $("#" + href).show();
-      $("#home").hide();
-      $("#about").hide();
-      $("#contact").hide();
-    } else if (href == "contact") {
-      $("#" + href).show();
-      $("#home").hide();
-      $("#action").hide();
-      $("#about").hide();
-    }
-  });
-});
+    // Pegando os link do menu para apresentar a página
+    $('a').click(function(e){
+        e.preventDefault()
+        // Variável para se guardar qual link abrir
+        let url = $(this).attr('href')
+        $('#'+url).show()
+    })
+})
